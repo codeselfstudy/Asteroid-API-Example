@@ -49,3 +49,9 @@ If you have questions, you can post them in <a href="http://codeselfstudy.com/fo
 ## Images
 
 The included images are from NASA and are in the public domain.
+
+## Screenshots
+
+![Homepage](static/images/astro-home.png)
+
+![Asteroids](static/images/astro-table.png)
