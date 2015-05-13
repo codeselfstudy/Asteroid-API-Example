@@ -46,9 +46,13 @@ Hint:
 
 If you have questions, you can post them in <a href="http://codeselfstudy.com/forum">the forum</a> or ask them at <a href="http://www.meetup.com/codeselfstudy/">our next meetup</a>.
 
-## Images
+## Improvements?
 
-The included images are from NASA and are in the public domain.
+Want to make this demo better? Make a pull request.
+
+## Copyrights
+
+The included images of asteroids are from NASA and are in the public domain.
 
 ## Screenshots
 
