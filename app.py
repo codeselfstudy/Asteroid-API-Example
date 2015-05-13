@@ -6,6 +6,7 @@ from flask import Flask, render_template, jsonify, url_for
 # Create a Flask application
 app = Flask(__name__)
 
+
 # Define some routes
 @app.route('/')
 def index():
@@ -15,9 +16,9 @@ def index():
     data['title'] = 'Saluton, Mondo!'
     data['body'] = """<p>This is a quick demo of how you can wire up a quick
         website with Flask and an API. You might normally get this text from your
-        database, or you could insert it directly in a template. See the
-        template for an example&mdash;this text is from app.py, but the button
-        below is from the template.</p>"""
+        database, or you could insert it directly in a template. See the template
+        for an example&mdash;this text is from app.py, but the button below is from
+        the template.</p>"""
 
     # Render a template with the content of the data dictionary
     return render_template('index.html', data=data)
@@ -59,4 +60,3 @@ def asteroids_api():
 if __name__ == '__main__':
     app.debug = True
     app.run(port=5005)
-
