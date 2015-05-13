@@ -21,22 +21,22 @@
     <script type="text/x-handlebars-template" id="asteroidTemplate">
         <table class="table table-striped table-responsive" id="asteroidTable">
             <thead>
-            <tr>
-                <th>Full Name</th>
-                <th>Closeness</th>
-                <th>Estimated Diameter</th>
-                <th>First Observed</th>
-            </tr>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Closeness</th>
+                    <th>Estimated Diameter</th>
+                    <th>First Observed</th>
+                </tr>
             </thead>
             <tbody>
-            {{#each asteroids}}
-            <tr>
-                <td>{{ full_name }}</td>
-                <td>{{ closeness }}</td>
-                <td>{{ est_diameter }}</td>
-                <td>{{ first_obs }}</td>
-            </tr>
-            {{/each}}
+                {{#each asteroids}}
+                <tr>
+                    <td>{{ full_name }}</td>
+                    <td>{{ closeness }}</td>
+                    <td>{{ est_diameter }}</td>
+                    <td>{{ first_obs }}</td>
+                </tr>
+                {{/each}}
             </tbody>
         </table>
     </script>
