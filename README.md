@@ -20,7 +20,7 @@ To run this site on your computer:
 
 On Ubuntu, I use this command, which I've aliased to `mkve3`:
 
-    mkve3='mkvirtualenv --python=\`which python3\`'
+    mkve3='mkvirtualenv --python=`which python3`'
 
 You can probably also use Python 3's [venv feature](https://docs.python.org/3/library/venv.html).
 
