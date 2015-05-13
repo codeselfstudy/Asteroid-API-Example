@@ -26,13 +26,18 @@ You can probably also use Python 3's [venv feature](https://docs.python.org/3/li
 
 ## Exercises
 
-Here are some ideas to learn more:
+Exercise ideas:
 
 1. Go to [this API directory](http://www.programmableweb.com/apis/directory) and find a different API.
 1. Edit the API request in `app.py` to point to the other API.
 1. Edit the Handlebars template in `templates/asteroids.html` to display the new data in a table.
 1. After that is working, change the name of the `templates/asteroids.html` to something that matches your new site concept.
-1. Wire `app.py` together with your new template name and be sure that everything still works.
+1. Wire `app.py` together with your new template name and be sure that everything still works. You'll probably want to change the URLs too.
+1. Check the Flask docs on how to implement dynamic URLs. For example, you might want to have the option to fetch five asteroids with `/asteroids/5`, or 10 asteroids with `/asteroids/10`. It might be something like:
+
+    @app.route('/asteroids/<int:num_of_asteroids>')
+    def asteroids(num_of_asteroids):
+        // Build the API query by inserting the num_of_asteroids into your request
 
 ## Questions?
 
