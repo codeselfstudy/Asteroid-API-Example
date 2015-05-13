@@ -16,50 +16,50 @@
 {% endblock %}
 
 {% block footer_scripts %}
-<!-- You need the 'raw' tags when putting Handlebars templates inside of Jinja2 templates -->
-{% raw %}
-<script type="text/x-handlebars-template" id="asteroidTemplate">
-    <table class="table table-striped table-responsive" id="asteroidTable">
-<thead>
-<tr>
-    <th>Full Name</th>
-    <th>Closeness</th>
-    <th>Estimated Diameter</th>
-    <th>First Observed</th>
-</tr>
-</thead>
-<tbody>
-{{#each asteroids}}
-<tr>
-    <td>{{ full_name }}</td>
-    <td>{{ closeness }}</td>
-    <td>{{ est_diameter }}</td>
-    <td>{{ first_obs }}</td>
-</tr>
-{{/each}}
-</tbody>
-    </table>
-</script>
-<script>
-    $(document).ready(function () {
-        // Get the JSON from the API
-        $.get('/api/asteroids', function (data) {
-            renderTemplate(data);
+    <!-- You need the 'raw' tags when putting Handlebars templates inside of Jinja2 templates -->
+    {% raw %}
+    <script type="text/x-handlebars-template" id="asteroidTemplate">
+        <table class="table table-striped table-responsive" id="asteroidTable">
+            <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Closeness</th>
+                <th>Estimated Diameter</th>
+                <th>First Observed</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each asteroids}}
+            <tr>
+                <td>{{ full_name }}</td>
+                <td>{{ closeness }}</td>
+                <td>{{ est_diameter }}</td>
+                <td>{{ first_obs }}</td>
+            </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Get the JSON from the API
+            $.get('/api/asteroids', function (data) {
+                renderTemplate(data);
+            });
         });
-    });
 
-    function renderTemplate(data) {
-        // Read more about Handlebars: http://codeselfstudy.com/wiki/Handlebars.js
+        function renderTemplate(data) {
+            // Read more about Handlebars: http://codeselfstudy.com/wiki/Handlebars.js
 
-        // Get the HTML from the Handlebars template
-        var source = $("#asteroidTemplate").html();
-        // Compile the template
-        var template = Handlebars.compile(source);
-        // Insert the data
-        var html = template(data);
-        // Add the template the page
-        $("#asteroidData").append(html);
-    }
-</script>
-{% endraw %}
+            // Get the HTML from the Handlebars template
+            var source = $("#asteroidTemplate").html();
+            // Compile the template
+            var template = Handlebars.compile(source);
+            // Insert the data
+            var html = template(data);
+            // Add the template the page
+            $("#asteroidData").append(html);
+        }
+    </script>
+    {% endraw %}
 {% endblock %}
