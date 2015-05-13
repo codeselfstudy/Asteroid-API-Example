@@ -22,7 +22,7 @@ On Ubuntu, I use this command, which I've aliased to `mkve3`:
 
     mkvirtualenv --python=`which python3`
 
-You can probably also use Python 3's [venv feature](https://docs.python.org/3/library/venv.html).
+Alternatively, I think that you could use Python 3's [venv feature](https://docs.python.org/3/library/venv.html).
 
 ## Exercises
 
@@ -35,7 +35,7 @@ Exercise ideas:
 1. Wire `app.py` together with your new template name and be sure that everything still works. You'll probably want to change the URLs too.
 1. Check the Flask docs on how to implement dynamic URLs. For example, you might want to have the option to fetch five asteroids with `/asteroids/5`, or 10 asteroids with `/asteroids/10`. It might be something like:
 
-Code:
+Hint:
 
     @app.route('/asteroids/<int:num_of_asteroids>')
     def asteroids(num_of_asteroids):
