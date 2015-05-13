@@ -23,3 +23,7 @@ On Ubuntu, I use this command, which I've aliased to `mkve3`:
     mkve3='mkvirtualenv --python=\`which python3\`'
 
 You can probably also use Python 3's [venv feature](https://docs.python.org/3/library/venv.html).
+
+## Questions?
+
+If you have questions, you can post them in <a href="http://codeselfstudy.com/forum">the forum</a> or ask them at <a href="http://www.meetup.com/codeselfstudy/">our next meetup</a>.
