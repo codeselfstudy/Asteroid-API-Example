@@ -35,6 +35,7 @@ Exercise ideas:
 1. Wire `app.py` together with your new template name and be sure that everything still works. You'll probably want to change the URLs too.
 1. Check the Flask docs on how to implement dynamic URLs. For example, you might want to have the option to fetch five asteroids with `/asteroids/5`, or 10 asteroids with `/asteroids/10`. It might be something like:
 
+
     @app.route('/asteroids/<int:num_of_asteroids>')
     def asteroids(num_of_asteroids):
         // Build the API query by inserting the num_of_asteroids into your request
