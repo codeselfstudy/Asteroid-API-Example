@@ -33,7 +33,7 @@ Exercise ideas:
 1. Edit the Handlebars template in `templates/asteroids.html` to display the new data in a table.
 1. After that is working, change the name of the `templates/asteroids.html` to something that matches your new site concept.
 1. Wire `app.py` together with your new template name and be sure that everything still works. You'll probably want to change the URLs too.
-1. Check the Flask docs on how to implement dynamic URLs. For example, you might want to have the option to fetch five asteroids with `/asteroids/5`, or 10 asteroids with `/asteroids/10`. It might be something like:
+1. Check the Flask docs on how to implement dynamic URLs. For example, you might want to have the option to fetch five asteroids with `/asteroids/5`, or 10 asteroids with `/asteroids/10`.
 
 Hint:
 
