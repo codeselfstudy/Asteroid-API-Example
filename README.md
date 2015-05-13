@@ -38,8 +38,8 @@ Exercise ideas:
 
 Hint:
 
-    @app.route('/asteroids/<int:num_of_asteroids>')
-    def asteroids(num_of_asteroids):
+    @app.route('/api/asteroids/<int:num_of_asteroids>')
+    def asteroids_api(num_of_asteroids):
         // Build the API query by inserting the num_of_asteroids into your request
 
 ## Questions?
