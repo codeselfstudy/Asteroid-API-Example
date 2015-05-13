@@ -34,7 +34,7 @@ def asteroids():
     data['body'] = """<p>This page uses JavaScript to render a table of Asteroid
         data. Python gets the data from an external API. JavaScript in the
         browser then gets that JSON and displays it with a Handlebars template.
-        Look at the source code for comments.</p>"""
+        Look at the <a href="https://github.com/CodeSelfStudy/Asteroid-API-Example">source code</a> for comments.</p>"""
 
     return render_template('asteroids.html', data=data)
 

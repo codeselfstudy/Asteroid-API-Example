@@ -7,7 +7,18 @@
         <h1>{{ data.title }}</h1>
         {{ data.body|safe }}
 
-        <p><a class="btn btn-primary" href="/asteroids">Look at Asteroids</a></p>
+        <p><a class="btn btn-primary" href="/asteroids">Check out some asteroids</a> or look at the <a href="https://github.com/CodeSelfStudy/Asteroid-API-Example">source code</a>.</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <img src="{{ url_for('static', filename='images/mathilde.jpg') }}" alt="Mathilde">
+    </div>
+    <div class="col-md-4">
+        <img src="{{ url_for('static', filename='images/vesta.jpg') }}" alt="Vesta">
+    </div>
+    <div class="col-md-4">
+        <img src="{{ url_for('static', filename='images/ida.jpg') }}" alt="Ida">
     </div>
 </div>
 {% endblock %}

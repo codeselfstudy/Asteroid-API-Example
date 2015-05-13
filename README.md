@@ -44,3 +44,7 @@ Hint:
 ## Questions?
 
 If you have questions, you can post them in <a href="http://codeselfstudy.com/forum">the forum</a> or ask them at <a href="http://www.meetup.com/codeselfstudy/">our next meetup</a>.
+
+## Images
+
+The included images are from NASA and are in the public domain.
