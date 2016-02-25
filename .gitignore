@@ -1,6 +1,7 @@
 # Editors
 *~
 *.sw[po]
+.idea/
 
 # Python
 *.py[co]
@@ -12,3 +13,7 @@ __pycache__/
 # Misc.
 tmp/
 *.bak
+Include/
+Lib/
+Scripts/
+pip-selfcheck.json
